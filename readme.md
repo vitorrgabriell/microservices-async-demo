@@ -75,3 +75,13 @@ curl -X POST http://localhost:8002/payments -H "Content-Type: application/json" 
 ```
 
 ---
+
+### Testes com mais pedidos
+```bash
+python tools/push\_orders.py --total <numero de pedidos> --concurrency <numero de requests>
+```
+
+### Processar pagamentos pendentes
+```bash
+python tools/drain_payments.py
+```
