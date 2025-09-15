@@ -1,4 +1,3 @@
-# tools/push_orders.py
 import argparse, asyncio, random, string
 import httpx
 

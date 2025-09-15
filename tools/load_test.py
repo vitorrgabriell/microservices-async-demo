@@ -1,4 +1,3 @@
-# tools/load_test.py
 import argparse, asyncio, random, string, time
 from dataclasses import dataclass
 from typing import List, Optional
