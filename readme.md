@@ -34,7 +34,7 @@ Os microserviços trocam eventos via RabbitMQ, utilizando tópicos para garantir
 
 1. Clone o repositório:
   ```bash
-  git clone <url-do-repositorio>
+  git clone https://github.com/vitorrgabriell/microservices-async-demo
   cd microservices-async-demo
   ```
 2. Copie o arquivo de exemplo de variáveis de ambiente:
