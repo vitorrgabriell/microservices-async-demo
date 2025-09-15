@@ -59,14 +59,19 @@ O PostgreSQL é inicializado automaticamente com os scripts em `ops/postgres/ini
 
 ## 📚 Exemplos de Uso
 
-### Criar um pedido
+### Consultar pedidos
 ```bash
-curl -X POST http://localhost:5000/orders -H "Content-Type: application/json" -d '{"item": "Produto X", "valor": 100.0}'
+curl http://localhost:8001/orders
 ```
 
-### Consultar pagamentos
+### Criar um pedido
 ```bash
-curl http://localhost:5001/payments
+curl -X POST http://localhost:8001/orders -H "Content-Type: application/json" -d '{"customer_name": "User Test", "item": "Product X", "amount_cents": 1500}'
+```
+
+### Realizar um pagamento
+```bash
+curl -X POST http://localhost:8002/payments -H "Content-Type: application/json" -d '{"order_id": <id do pedido>, "amount_cents": 1500}'
 ```
 
 ---
